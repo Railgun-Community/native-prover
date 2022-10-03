@@ -1,0 +1,39 @@
+{
+  "name": "@railgun-community/native-prover",
+  "license": "0BSD",
+  "version": "1.2.10",
+  "description": "Native groth16 prover",
+  "main": "dist/ts/index.js",
+  "author": "",
+  "files": [
+    "dist",
+    "binding.gyp",
+    "dep",
+    "src",
+    "scripts",
+    "tsconfig.json",
+    "prebuilds"
+  ],
+  "scripts": {
+    "install": "node-gyp-build",
+    "rebuild": "npm run install --build-from-source",
+    "preprebuild": "tsc",
+    "prebuild": "npx prebuildify --napi --strip --tag-uv --tag-armv",
+    "prepack": "tsc"
+  },
+  "dependencies": {
+    "node-gyp-build": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.2",
+    "node-addon-api": "3.1.0",
+    "nodejs-mobile-react-native": "^0.8.1",
+    "prebuildify": "^5.0.1",
+    "typescript": "^4.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Railgun-Community/native-prover.git"
+  },
+  "gypfile": true
+}
