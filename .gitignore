@@ -1,0 +1,17 @@
+node_modules
+build
+package-lock.json
+*.log
+*.swp
+
+# node-pre-gyp
+addon/build-tmp-napi-v3
+addon/lib
+addon/nodejs-assets
+addon/dep/gmp-6.2.1
+
+addon/dist
+example/dist
+.vscode
+
+example/yarn.lock

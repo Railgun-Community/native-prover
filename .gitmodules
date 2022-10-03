@@ -1,0 +1,3 @@
+[submodule "addon/src/cpp"]
+	path = addon/src/cpp
+	url = github:railgun-privacy/native-prover-cpp-private
